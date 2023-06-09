@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+// function App () {
 
-function App() {
+//   //javascript
+//   //console.log('hello from component');
+
+//   const now = new Date();
+//   const a =10;
+//   const b =20;
+
+//   console.log(now, a+b);
+//   return (
+//     <div>
+//       <p>Hello World, it is {now.toString()}</p>
+//       <p>
+//         {a} plus {b} is {a+b}
+//       </p>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from 'react'
+
+// function App() {
+//   return (
+//     <div>App</div>
+//   )
+// }
+
+function Hello(props) {
+  // console.log(props);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Hello World {props.name}, you are {props.age} years 0git ld!</p>
     </div>
-  );
+  )
 }
 
-export default App;
+function App () {
+
+  const age =10;
+
+  return (
+    <div>
+      <h1>Greetings</h1>
+      <hello name='yadees'/>
+      <Hello name='eswari'/>
+    </div>
+  )
+}
+export default App
+
+
+
+
